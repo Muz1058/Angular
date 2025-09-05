@@ -6,10 +6,11 @@ import { Signals } from './signals/signals';
 import { ForContextualVariable } from './for-contextual-variable/for-contextual-variable';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoList } from './todo-list/todo-list';
+import { AngularDirectives } from './angular-directives/angular-directives';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList],
+  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList,AngularDirectives],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

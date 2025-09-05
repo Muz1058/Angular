@@ -1,0 +1,29 @@
+<p>angular-directives works!</p>
+
+<ul>
+    <li *ngFor="let x of students">{{x}}    </li>
+</ul>
+
+<ul>
+    <li *ngFor= "let student of studentData">{{student.name}},{{student.age}}</li>
+</ul>
+
+
+<div *ngFor="let category of categories">
+  <h3>{{ category.name }}</h3>
+  <ul>
+    <li *ngFor="let item of category.items">{{ item }}</li>
+  </ul>
+</div> 
+
+<div *ngIf="num==0":else elseBlock>
+    <h1>Heading 0</h1>
+</div>
+
+<div *ngIf="num==0; else elseBlock">
+    <h1>Heading 0</h1>
+</div>
+
+<ng-template #elseBlock>
+<h1>Heading</h1>
+</ng-template>
