@@ -7,10 +7,11 @@ import { ForContextualVariable } from './for-contextual-variable/for-contextual-
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoList } from './todo-list/todo-list';
 import { AngularDirectives } from './angular-directives/angular-directives';
+import { Header } from './header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList,AngularDirectives,RouterLink],
+  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList,AngularDirectives,Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
