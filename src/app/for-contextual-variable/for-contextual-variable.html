@@ -1,0 +1,32 @@
+<p>for-contextual-variable works!</p>
+
+@for(user of users;track user; 
+     let i= $index;
+     let f=$first;
+     let l=$last;
+     let e=$even;
+     let o=$odd;
+
+     ){
+    @if(f){
+        <h3 style="background-color: red;" >this is our {{i+1}} and name is {{user}}</h3>
+
+    }
+    @else if (l) {
+        <h3  style="background-color: blue;">this is our {{i+1}} and name is {{user}}</h3>
+        <h3>count :: {{$count}}</h3>
+    }
+    @else if(e){
+         <h3  style="background-color: green;">this is our {{i+1}} and name is {{user}}</h3>
+    }
+    @else if(o){
+         <h3  style="background-color: aqua;">this is our {{i+1}} and name is {{user}}</h3>
+    }
+     @else {
+        <h3>this is our {{i+1}} and name is {{user}}</h3>
+     }
+
+}
+@empty {
+    <h1>No recourd found</h1>
+}

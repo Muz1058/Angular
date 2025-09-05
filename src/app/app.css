@@ -1,0 +1,46 @@
+/* body{
+    background-color: #414141;
+}
+
+h1{
+    color: rgb(128, 128, 128);
+}
+h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.counter{
+    
+}
+button{
+height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px
+}
+
+#inc{
+    background-color: green;
+    border: none;
+}
+#inc:hover{
+  height: 110px;
+    width: 110px;
+}
+#dec{
+    background-color: yellow;
+    border: none;
+}
+#res{
+    background-color: red;
+    border: none;
+} */

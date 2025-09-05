@@ -1,0 +1,27 @@
+<p>signals works!</p>
+<!-- 
+What are signals?
+A signal is a wrapper around a value that notifies interested consumers when that value changes. Signals can contain any value, from primitives to complex data structures.
+
+You read a signal's value by calling its getter function, which allows Angular to track where the signal is used.
+
+Signals may be either writable or read-only. 
+
+signals are reactive like useState in react
+-->
+
+<h3>{{count()}}</h3>
+
+<button (click)="count.set(count()+1)" >Increas Value</button>
+
+<h2>{{data()}}</h2>
+
+<button (click)="updataData()">Update Data</button>
+
+<p>Computed Signal</p>
+<h3>x = {{x()}}</h3>
+<button (click)="x.set(x()+5)">Update X</button>
+<h3>x = {{y()}}</h3>
+<button (click)="y.set(y()+5)">Update Y</button>
+
+<h2>Z = (x + y) = {{z()}}</h2>
