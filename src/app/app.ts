@@ -5,10 +5,11 @@ import { ProfileComponent } from './profile/profile';
 import { Signals } from './signals/signals';
 import { ForContextualVariable } from './for-contextual-variable/for-contextual-variable';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
+import { TodoList } from './todo-list/todo-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding],
+  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
