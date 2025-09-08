@@ -1,11 +1,28 @@
 <h1>Form</h1>
 
-<form action="" >
+<!-- <form action="" >
   <label for="name">Name</label>
+ 
   <input type="text" name="name" id="name" placeholder="Enter your Name" [formControl]="name" />
+   <br><br>
   <label for="password">Password</label>
   <input type="text" placeholder="Enter Password" [formControl]="password" />
 </form>
 
 <h3>Name: {{ name.value }}</h3>
-<h3>Password: {{ password.value }}</h3>
+<h3>Password: {{ password.value }}</h3> -->
+
+<!-- form grouping -->
+
+<form  [formGroup]="profileform" (ngSubmit)="onSubmit()">
+    
+  <input type="text"placeholder="Enter your Name" formControlName="name" />
+   <br><br>
+  <label for="password">Password</label>
+  <input type="text" placeholder="Enter Password" formControlName="password"/>
+  <br><br>
+  <label for="password">Email</label>
+  <input type="email" placeholder="Enter Email" formControlName="email"/>
+  <br><br>
+  <button>Submit</button>
+</form>

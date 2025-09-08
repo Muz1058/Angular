@@ -8,8 +8,24 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './froms.css'
 })
 export class Froms {
-name=new FormControl();
-password=new FormControl()
+
+// basic reactive form
+// name=new FormControl();
+// password=new FormControl()
+
+
+// reactive form with grouping
+
+profileform=  new FormGroup({
+  name:new FormControl(),
+  password:new FormControl(),
+  email:new FormControl(),
+})
+
+onSubmit(){
+  console.log("Fun called");
+  
+}
 
 
 
