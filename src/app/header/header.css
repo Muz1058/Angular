@@ -10,6 +10,8 @@ nav{
     justify-content: space-between;
     background-color: rgb(111, 218, 111);
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 nav ul{
     display: flex;

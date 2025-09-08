@@ -1,9 +1,10 @@
+import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-froms',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,NgIf],
   templateUrl: './froms.html',
   styleUrl: './froms.css'
 })
@@ -17,14 +18,24 @@ export class Froms {
 // reactive form with grouping
 
 profileform=  new FormGroup({
-  name:new FormControl(),
-  password:new FormControl(),
-  email:new FormControl(),
+  name:new FormControl('',[Validators.required,Validators.max(50),Validators.min(5)]),
+  password:new FormControl('',[Validators.required,Validators.max(50),Validators.min(5)]),
+  email:new FormControl('',[Validators.required,Validators.max(50),Validators.min(5)]),
 })
 
 onSubmit(){
   console.log("Fun called");
   
+}
+
+get name(){
+  return this.profileform.get('name')
+}
+get password(){
+  return this.profileform.get('password')
+}
+get email(){
+  return this.profileform.get('email')
 }
 
 
