@@ -4,3 +4,16 @@
 
 <button (click)="goTOProfile('ahmad','10')">Open your Profile Ahmad </button>
 <button (click)="goTOProfile('ALi','15')">Open your Profile Ali </button>
+
+<!-- dynamic routing -->
+
+<h1>Dynamic Users</h1>
+
+<ul>
+    @for (user of users; track user.id) {
+        <li><h3><a routerLink="user/{{user.id}}/{{user.name}}">{{user.name}}</a></h3></li>
+
+}
+</ul>
+
+
