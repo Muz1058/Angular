@@ -8,10 +8,11 @@ import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoList } from './todo-list/todo-list';
 import { AngularDirectives } from './angular-directives/angular-directives';
 import { Header } from './header/header';
+import { Froms } from './froms/froms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList,AngularDirectives,Header],
+  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList,AngularDirectives,Header,Froms],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

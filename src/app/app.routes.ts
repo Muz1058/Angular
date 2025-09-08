@@ -7,6 +7,7 @@ import { PageNotFound } from './page-not-found/page-not-found';
 import { ProfileComponent } from './profile/profile';
 import { User } from './user/user';
 import { ResolveFn } from '@angular/router';
+import { Froms } from './froms/froms';
 const titleResolver: ResolveFn<string> = (route) => {
   return `Profile of ${route.paramMap.get('name')}`;
 };
@@ -42,6 +43,11 @@ export const routes: Routes = [
         path:'user/:id/:name',
         component:User,
         title:titleResolver
+    },
+    {
+        path:'form',
+        component:Froms,
+        title:'Form'
     },
     {
         path:'**',
