@@ -16,7 +16,6 @@ export class User {
     route.params.subscribe(params=>{
       this.userName=params['name']
       this.userId=params['id']
-
     })
   }
 

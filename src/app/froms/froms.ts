@@ -1,10 +1,10 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-froms',
-  imports: [ReactiveFormsModule,NgIf],
+  imports: [ReactiveFormsModule,NgIf,FormsModule,NgIf],
   templateUrl: './froms.html',
   styleUrl: './froms.css'
 })
@@ -36,6 +36,19 @@ get password(){
 }
 get email(){
   return this.profileform.get('email')
+}
+
+
+//Templete driven form
+
+details:any;
+viewDetails(val:NgForm){
+  console.log(val);
+  this.details=val;
+  console.log(this.details);
+  
+  
+
 }
 
 
