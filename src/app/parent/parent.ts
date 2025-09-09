@@ -12,8 +12,15 @@ export class Parent {
 
   onUserChange(val:string){
     this.userName=val
+  }
 
+  //child to parent
 
+  users:undefined|string;
+  handleUsers(users:string){
+    console.log(users);
+    this.users=users
+    
   }
 
 }

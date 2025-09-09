@@ -1,5 +1,19 @@
 <p>parent works!</p>
+
+<!-- child to parent -->
+ 
+<app-child (getUsers)="handleUsers($event)"></app-child>
+
+@for (user of users; track user) {
+    <h1>User name is {{user}}</h1>
+}
+
+
+
+<!-- parent to child -->
+
 <app-child [user]="userName"></app-child>
+
 
 <select #selectedValues (change)="onUserChange(selectedValues.value)">
     <option value="Ali">Ali</option>
