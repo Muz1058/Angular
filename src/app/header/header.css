@@ -8,10 +8,11 @@ nav{
 
     display: flex;
     justify-content: space-between;
-    background-color: rgb(111, 218, 111);
+    background-color: #014241;
     flex-wrap: wrap;
     padding-left: 50px;
     padding-right: 50px;
+    color: rgb(4,68,67);
 }
 nav ul{
     display: flex;
@@ -25,15 +26,15 @@ nav ul li{
 
     padding: 4px 8px;
 
-    color: #fafafa;
+    color: #F5EFD8;
 }
 
 nav ul li:hover{
-    background-color: rgb(39, 122, 39);
+    background-color: #012d2d;
 }
 
 
 .active{
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #F5EFD8;
     /* background-color: red; */
 } 
