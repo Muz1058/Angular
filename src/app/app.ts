@@ -9,10 +9,12 @@ import { TodoList } from './todo-list/todo-list';
 import { AngularDirectives } from './angular-directives/angular-directives';
 import { Header } from './header/header';
 import { Froms } from './froms/froms';
+import { Parent } from './parent/parent';
+import { Child } from './child/child';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList,AngularDirectives,Header,Froms],
+  imports: [RouterOutlet,ProfileComponent,Signals,ForContextualVariable,TwoWayBinding,TodoList,AngularDirectives,Header,Froms,Parent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

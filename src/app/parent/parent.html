@@ -1,0 +1,8 @@
+<p>parent works!</p>
+<app-child [user]="userName"></app-child>
+
+<select #selectedValues (change)="onUserChange(selectedValues.value)">
+    <option value="Ali">Ali</option>
+    <option value="Ahmad">Ahmad</option>
+    <option value="Moeez">Moeez</option>
+</select>
