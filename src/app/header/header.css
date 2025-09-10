@@ -38,3 +38,8 @@ nav ul li:hover{
     border-bottom: 3px solid #F5EFD8;
     /* background-color: red; */
 } 
+.logo{
+    color: #F5EFD8;
+    font-size: 24px;
+    padding: 4px 8px;
+}

@@ -12,3 +12,22 @@
 
 
 <h1>Welcome {{userName}} ,your ID is {{userId}}</h1>
+
+<h1>Albums from API</h1>
+
+<table border="1px">
+    <tr>
+        <td>User Id</td>
+        <td>Album Id</td>
+        <td>Title</td>
+    </tr>
+  
+        @for (album of albums; track album.id) {
+              <tr>
+        <td>{{album.userId}}</td>
+        <td>{{album.id}}</td>
+        <td>{{album.title}}</td>
+        </tr>
+        }
+    
+</table>
