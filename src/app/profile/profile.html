@@ -10,24 +10,41 @@
 <div (mouseover)="handleEvent($event)" style="width: 80px;height: 80px ;background-color:green">mouseover</div>
 <div (mousewheel)="handleEvent($event)" style="width: 80px;height: 80px ;background-color:green">mousewheel</div> -->
 
-
-<h1>Welcome {{userName}} ,your ID is {{userId}}</h1>
+<h1>Welcome {{ userName }} ,your ID is {{ userId }}</h1>
 
 <h1>Albums from API</h1>
-
+{{isUserLoaded}}
+{{isAlbumLoaded}}
+@if (isUserLoaded) {
 <table border="1px">
-    <tr>
-        <td>User Id</td>
-        <td>Album Id</td>
-        <td>Title</td>
-    </tr>
-  
-        @for (album of albums; track album.id) {
-              <tr>
-        <td>{{album.userId}}</td>
-        <td>{{album.id}}</td>
-        <td>{{album.title}}</td>
-        </tr>
-        }
-    
+  <tr>
+    <td>User Id</td>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+
+  @for (user of users; track user.id) {
+  <tr>
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.age }}</td>
+  </tr>
+  }
 </table>
+} @if (isAlbumLoaded) {
+<table border="1px">
+  <tr>
+    <td>User Id</td>
+    <td>Album Id</td>
+    <td>Title</td>
+  </tr>
+
+  @for (album of albums; track album.id) {
+  <tr>
+    <td>{{ album.userId }}</td>
+    <td>{{ album.id }}</td>
+    <td>{{ album.title }}</td>
+  </tr>
+  }
+</table>
+}
